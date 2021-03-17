@@ -1,16 +1,13 @@
 <template>
   <div>
-		<main-contents></main-contents>
+		<router-view></router-view>
   </div>
 </template>
 
 <script>
-import MainContents from '@/views/Main.vue'
 
 export default {
-  components: {
-    MainContents
-  }
+  
 }
 </script>
 
