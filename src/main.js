@@ -1,14 +1,17 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-// 라우터
-import router from './router/index.js'
+// 변수를 불러오는거니까 { } 요놈으로 감싸줘야한다.
+import { router } from './router/index.js'
+import { store } from './store/index.js'
+
 
 new Vue({ // 루트 컴포넌트
-  router,
-  render: h => h(App)
+  render: h => h(App),
+	router, // router: router 와 같은 말인 축약형 ES6 문법
+	store,
 }).$mount('#app')
-//라우터
+
 
 var STORAGE_KEY = 'todos-vuekr-demo'
 var todoStorage = {

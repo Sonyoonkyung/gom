@@ -1,16 +1,17 @@
 <template>
 	<div class="wrap_box">
 		<h2>핫이슈</h2>
-		<hot-issue></hot-issue> <!-- PascalCase 표기법(파스칼 케이스) -->
+		<router-link to="/mypage">마이페이지</router-link>
+		<todo-list></todo-list>
 	</div>
 </template>
 
 <script>
-import HotIssue from '@/components/list/HotIssue.vue';
+import TodoList from '@/components/list/TodoList.vue';
 
 export default {
 	components: {
-		HotIssue
+		TodoList
 	}
 }
 </script>
